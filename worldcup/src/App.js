@@ -5,13 +5,11 @@ import france_logo from './flags/france.png';
 import spain_logo from './flags/spain.png'; 
 import russia_logo from './flags/russia.jpg';  
 import Card from './Card';
+import CardList from './CardList'
 
 const App = () => {
 	return(<div>
-					<Card name={countries[0].name} source={russia_logo}/>
-					<Card name={countries[1].name} source={portugal_logo}/>
-					<Card name={countries[2].name} source={spain_logo}/>
-					<Card name={countries[3].name} source={france_logo}/>
+				<CardList countries={countries} />
 			</div>	
 	)
 }
