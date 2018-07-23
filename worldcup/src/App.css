@@ -1,0 +1,10 @@
+@font-face {
+font-family: 'DS-Digital Bold';
+font-style: normal;
+font-weight: normal;
+src: local('DS-Digital Bold'), url('DS-DIGIB.woff') format('woff');
+}
+
+h1 {
+	font-family: 'DS-Digital Bold';
+}
