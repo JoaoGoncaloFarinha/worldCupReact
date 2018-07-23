@@ -2,6 +2,7 @@ import React, {Component}  from 'react';
 import {countries} from './countries.js';
 import CardList from './CardList';
 import SearchBox from './SearchBox';
+import Scroll from './Scroll';
 import './App.css';
 
 class App extends Component{
@@ -24,9 +25,11 @@ class App extends Component{
 		console.log(filteredCountries)
 		return(
 			<div className='tc'>
-				<h1>WorldCup Teams</h1>
+				<h1 className='f1'>WorldCup Teams</h1>
 				<SearchBox searchChange={this.onSearchChange} />
-				<CardList countries={filteredCountries} />
+				<Scroll>
+					<CardList countries={filteredCountries} />
+				</Scroll>
 			</div>
 		 );
 	}
